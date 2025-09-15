@@ -9,6 +9,7 @@ export default class Circle {
 
   update(dt) {
     this.position.x += dt * this.velocity.x;
+    this.position.y += dt * this.velocity.y;
   }
 
   draw(ctx) {
