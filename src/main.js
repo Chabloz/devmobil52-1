@@ -8,7 +8,7 @@ const circle = new Circle({
   position: {x: 0, y: 0},
   radius: 300,
   color: 'tomato',
-  velocity: {x: 1, y: 0.1}
+  velocity: {x: 0.1, y: 0.1}
 });
 
 const canvas = document.querySelector('canvas');
@@ -22,6 +22,7 @@ function tickPhysic(dt) {
   ctx.canvas.width = ctx.canvas.clientWidth;
   ctx.canvas.height = ctx.canvas.clientHeight;
   if (keyboard.isKeyPressed('KeyD')) {
+    console.log(keyboard.keys);
     circle.update(dt);
   }
 }
