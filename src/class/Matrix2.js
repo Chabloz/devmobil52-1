@@ -4,5 +4,8 @@ export default class Matrix2 {
 
   }
 
+  randomizeBool(prob) {
+    const state = Math.random() < prop ? 1 : 0
+  }
 
 }

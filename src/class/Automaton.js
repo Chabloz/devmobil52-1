@@ -5,4 +5,6 @@ export default class Automaton {
   constructor() {
     this.matrix = new Matrix2();
   }
+
+
 }
